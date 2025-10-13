@@ -1,2 +1,2 @@
 #!/bin/bash
-chown -R root:root hello
+find . -maxdepth 1 -user guillaume -name hello -exec chown vincent {} \+
