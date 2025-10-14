@@ -1,2 +1,2 @@
 #!/bin/bash
-grep "^3:" <(grep -n "^" iacta)
+grep -n "^" iacta | grep "^3:"
