@@ -1,2 +1,2 @@
 #!/bin/bash
-set -o posix | grep -v '^_' | cat - <(env) <(declare -F)
+cat <(set -o posix set) <(env) <(declare -F)
