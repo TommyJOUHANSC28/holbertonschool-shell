@@ -1,2 +1,2 @@
 #!/bin/bash
-cat <(command set -o posix set) <(command env) <(command declare -F)
+cat <(set -o posix set) <(env) <(declare -F)
