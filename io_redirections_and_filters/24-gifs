@@ -1,2 +1,2 @@
 #!/bin/bash
-cut -f 1,6 -d 'name' /etc/passwd | sort
+find . -type f -iname '*.gif' -printf '%f\n' | sed 's/\.gif$//I' | LC_ALL=C sort -f
