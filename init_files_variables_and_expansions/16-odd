@@ -1,2 +1,2 @@
 #!/bin/bash
-LC_ALL=C perl -ne 'print if $. % 2 == 1' $FILE
+cat $FILE | perl -ne 'print if $. % 2 == 1'
