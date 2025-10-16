@@ -1,2 +1,2 @@
 #!/bin/bash
-find . -type f -iname '*.gif' -exec sh -c 'for f in "$@";do d=${f%/*};n=${f##*/};b=${n%.*};eval "[ \$x_$d ]||echo \$b;x_$d=1";done' _ {} +|LC_ALL=C sort -f
+cut -f 1,6 -d 'name' /etc/passwd | sort
